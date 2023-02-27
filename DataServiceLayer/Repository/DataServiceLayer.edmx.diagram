@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="79b36427e16d40c4adbcbf6436680b25" Name="Diagram1" ZoomLevel="21">
+        <EntityTypeShape EntityType="MatjarTestDBModel.AgentVisitsTbl" Width="1.5" PointX="5.75" PointY="4.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.AreasTbl" Width="1.5" PointX="7.75" PointY="4.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.AttributesListDetailsTbl" Width="1.5" PointX="3" PointY="2.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.AttributesListDetailValuesTbl" Width="1.5" PointX="7.75" PointY="7.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.AttributesListsTbl" Width="1.5" PointX="0.75" PointY="2.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.Audit_Log_Login" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.BannersTbl" Width="1.5" PointX="2.75" PointY="8.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.BarcodesTbl" Width="1.5" PointX="25" PointY="133.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.BranchesTbl" Width="1.5" PointX="4.75" PointY="8.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.BrandsDepartmentsTbl" Width="1.5" PointX="9.75" PointY="4.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.BrandsTbl" Width="1.5" PointX="8.5" PointY="111.375" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.CategoriesTbl" Width="1.5" PointX="0.75" PointY="107.375" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.CategoriesTypesTbl" Width="1.5" PointX="1.5" PointY="103.875" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.CitiesTbl" Width="1.5" PointX="5.25" PointY="141.875" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ColorsTbl" Width="1.5" PointX="22.75" PointY="149.375" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.CompaniesTbl" Width="1.5" PointX="6.25" PointY="131.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ComplaintStatusTbl" Width="1.5" PointX="9.75" PointY="7.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ComplaintsTbl" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ComplaintTypeTbl" Width="1.5" PointX="6.75" PointY="10.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ConfigTbl" Width="1.5" PointX="6" PointY="107.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.CountriesTbl" Width="1.5" PointX="0.75" PointY="113.375" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.CountryCurrenciesTbl" Width="1.5" PointX="3" PointY="118.5" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.CouponsTbl" Width="1.5" PointX="14.5" PointY="153.5" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.CouponTypesTbl" Width="1.5" PointX="12.25" PointY="154.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.CurrenciesTbl" Width="1.5" PointX="3.75" PointY="122.5" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.CustomColumnsNamesTbl" Width="1.5" PointX="3" PointY="5.875" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.CustomTablesNamesTbl" Width="1.5" PointX="0.75" PointY="6" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.DaysTbl" Width="1.5" PointX="21.75" PointY="110.625" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.DeliveryPlacesTbl" Width="1.5" PointX="8.75" PointY="10.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.DeviceRegistrationIdsTbl" Width="1.5" PointX="10.75" PointY="10.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.DevicesLogTbl" Width="1.5" PointX="11.75" PointY="4.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.EducationLevelsTbl" Width="1.5" PointX="6.25" PointY="125.875" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ErrorsLogTbl" Width="1.5" PointX="12.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ExcelReportsTbl" Width="1.5" PointX="12.75" PointY="8.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.FakeData" Width="1.5" PointX="12.75" PointY="11.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.GovernoratesTbl" Width="1.5" PointX="3" PointY="141.625" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.GrantPointTypesTbl" Width="1.5" PointX="3.75" PointY="127.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemBookingDaysTbl" Width="1.5" PointX="24" PointY="117.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemBookingDayTimesTbl" Width="1.5" PointX="0.75" PointY="13.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemBookingStatusTbl" Width="1.5" PointX="5.75" PointY="1.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemBookingsTbl" Width="1.5" PointX="8" PointY="1" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemColorsPricesTbl" Width="1.5" PointX="24.25" PointY="141.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemColorsSizesPricesTbl" Width="1.5" PointX="13" PointY="182.5" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemColorsSizesTbl" Width="1.5" PointX="13" PointY="112.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemColorsTbl" Width="1.5" PointX="22" PointY="133.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemDepartmentImageCountriesTbl" Width="1.5" PointX="3" PointY="114.875" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemDepartmentImagesTbl" Width="1.5" PointX="0.75" PointY="119.625" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemDepartmentsTbl" Width="1.5" PointX="1.5" PointY="123.625" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemImagesTbl" Width="1.5" PointX="13" PointY="186" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemLikesTbl" Width="1.5" PointX="16" PointY="120.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemMatchedItemsTbl" Width="1.5" PointX="13" PointY="161.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemPricesTbl" Width="1.5" PointX="8.25" PointY="115.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemQuantitiesTbl" Width="1.5" PointX="13" PointY="179.5" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemRatingsTbl" Width="1.5" PointX="16" PointY="124.875" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemsCompaniesTbl" Width="1.5" PointX="24" PointY="124.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemsCountriesTbl" Width="1.5" PointX="16" PointY="117.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemSerialsTbl" Width="1.5" PointX="13" PointY="140.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemSeriesTbl" Width="1.5" PointX="27.25" PointY="133.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemsGovernoratesTbl" Width="1.5" PointX="19" PointY="142.5" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemSizesPricesTbl" Width="1.5" PointX="18.25" PointY="146.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemSizesTbl" Width="1.5" PointX="16" PointY="139" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemsTbl" Width="1.5" PointX="10.75" PointY="122.375" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemsUsersTypesTbl" Width="1.5" PointX="22" PointY="127.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemTagsTbl" Width="1.5" PointX="19" PointY="138.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemTypeAttributesTbl" Width="1.5" PointX="10.75" PointY="55.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemTypeDepartmentsTbl" Width="1.5" PointX="2.75" PointY="13.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemTypesTbl" Width="1.5" PointX="8.5" PointY="108.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ItemWishlistsTbl" Width="1.5" PointX="25" PointY="137.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.JobsTbl" Width="1.5" PointX="6.25" PointY="135" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.LocationDaysTbl" Width="1.5" PointX="28" PointY="129.875" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.LocationDayTimesTbl" Width="1.5" PointX="30.25" PointY="130" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.LocationsTbl" Width="1.5" PointX="6.25" PointY="154" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.MainBalanceTbl" Width="1.5" PointX="13.75" PointY="132.625" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.MainBalanceTypesTbl" Width="1.5" PointX="11.5" PointY="150.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.MaintenanceStatusTbl" Width="1.5" PointX="13.75" PointY="4.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.MaintenanceTicketsTbl" Width="1.5" PointX="4.75" PointY="13.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.NotificationsTbl" Width="1.5" PointX="19.75" PointY="132.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.NotificationsTbl_Audit" Width="1.5" PointX="6.75" PointY="13.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.NotificationsTypesTbl" Width="1.5" PointX="17.5" PointY="159" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.NotificationsUsersTbl" Width="1.5" PointX="16.75" PointY="136" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OceanCategoryTypesTbl" Width="1.5" PointX="14.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OceanMatjarCategoriesTbl" Width="1.5" PointX="3" PointY="99.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OceanMatjarColorsTbl" Width="1.5" PointX="25" PointY="149.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OceanMatjarItemsTbl" Width="1.5" PointX="13" PointY="174.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OceanMatjarPricesTbl" Width="1.5" PointX="9" PointY="105.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OceanMatjarSizesTbl" Width="1.5" PointX="25" PointY="146.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OceanPriceTypesTbl" Width="1.5" PointX="6.75" PointY="101.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OceanServersTbl" Width="1.5" PointX="14.75" PointY="7.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OffersCompaniesTbl" Width="1.5" PointX="21" PointY="122" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OffersCountriesTbl" Width="1.5" PointX="21" PointY="119" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OffersDetailRulesTbl" Width="1.5" PointX="25" PointY="128" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OffersDetailsColorsSizesPricesTbl" Width="1.5" PointX="29.25" PointY="122.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OffersDetailsPricesTbl" Width="1.5" PointX="11.25" PointY="118.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OffersDetailsTbl" Width="1.5" PointX="27" PointY="120.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OffersGovernoratesTbl" Width="1.5" PointX="22" PointY="130.875" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OffersTbl" Width="1.5" PointX="18.75" PointY="117.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OffersUsersTypesTbl" Width="1.5" PointX="24" PointY="121" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OfferTypesTbl" Width="1.5" PointX="16.5" PointY="114.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OrderDetailsNotificationsTbl" Width="1.5" PointX="8.75" PointY="14.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OrderDetailsOffersDetailsTbl" Width="1.5" PointX="12.75" PointY="146" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OrderDetailsSeriesTbl" Width="1.5" PointX="9.75" PointY="145.875" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OrderDetailStatusTbl" Width="1.5" PointX="14.75" PointY="10.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OrderDetailsTbl" Width="1.5" PointX="7.5" PointY="141.875" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OrdersNotificationsTbl" Width="1.5" PointX="14.75" PointY="13.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OrderStatusTbl" Width="1.5" PointX="11.5" PointY="109.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OrdersTbl" Width="1.5" PointX="13.75" PointY="116.5" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.OrderTypesTbl" Width="1.5" PointX="15.75" PointY="4.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.PaymentMethodsTbl" Width="1.5" PointX="10.75" PointY="15.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.PaymentTypeTbl" Width="1.5" PointX="16.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.PositionsTbl" Width="1.5" PointX="6.25" PointY="138" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.PriceTypesTbl" Width="1.5" PointX="3.75" PointY="107.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.QuantitiesTbl" Width="1.5" PointX="0.75" PointY="16.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.RequestsTbl" Width="1.5" PointX="19.75" PointY="128.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ResourcesTbl" Width="1.5" PointX="16.75" PointY="7.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.SessionsTbl" Width="1.5" PointX="10.75" PointY="197.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.SizesGroupsTbl" Width="1.5" PointX="20.5" PointY="146" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.SizesTbl" Width="1.5" PointX="22.75" PointY="145.625" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.StoriesTbl" Width="1.5" PointX="1.5" PointY="129.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.StoryDepartmentsTbl" Width="1.5" PointX="3.75" PointY="129.875" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.StoryDetailsTbl" Width="1.5" PointX="3.75" PointY="132.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.StyleActionsTbl" Width="1.5" PointX="19.75" PointY="157.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.StyleDetailsImagesTbl" Width="1.5" PointX="22" PointY="142.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.StyleDetailsItemsTbl" Width="1.5" PointX="22" PointY="138.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.StyleDetailsTbl" Width="1.5" PointX="19.75" PointY="154.625" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.StylesTbl" Width="1.5" PointX="17.5" PointY="154" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.StyleTagsTbl" Width="1.5" PointX="19.75" PointY="151.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.sysdiagrams" Width="1.5" PointX="16.75" PointY="10.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.TagsTbl" Width="1.5" PointX="16.75" PointY="150.625" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.TagsTypesTbl" Width="1.5" PointX="14.5" PointY="150.875" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.tmp__NotificationsTbl_0" Width="1.5" PointX="12.75" PointY="16.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.TransferMethodsTbl" Width="1.5" PointX="17.5" PointY="111" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.TransferStatusTbl" Width="1.5" PointX="14.5" PointY="110.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.TransfersTbl" Width="1.5" PointX="16.75" PointY="128.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UnitsTbl" Width="1.5" PointX="6" PointY="104.25" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UsageDataTbl" Width="1.5" PointX="16.75" PointY="13.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserColumnsTbl" Width="1.5" PointX="14.75" PointY="16.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserColumnsTemplatesTbl" Width="1.5" PointX="16.75" PointY="16.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserCompaniesTbl" Width="1.5" PointX="13.75" PointY="137" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserExcludedColumnsTbl" Width="1.5" PointX="2.75" PointY="17.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserGiftsExceptionsTbl" Width="1.5" PointX="17.75" PointY="3.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserGiftsRulesTbl" Width="1.5" PointX="24" PointY="97.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserProfileColumnsTbl" Width="1.5" PointX="18.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UsersAddressesTbl" Width="1.5" PointX="4.75" PointY="18.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UsersCouponTbl" Width="1.5" PointX="16.75" PointY="133" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserSendExceptionsTbl" Width="1.5" PointX="18.75" PointY="6.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserSendRulesTbl" Width="1.5" PointX="24" PointY="102.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserSessionsTbl" Width="1.5" PointX="6.75" PointY="18.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UsersPermissionsTbl" Width="1.5" PointX="10.75" PointY="200" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UsersPermissionsTemplatesTbl" Width="1.5" PointX="24" PointY="153.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UsersTbl" Width="1.5" PointX="8.5" PointY="119.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UsersTypesTbl" Width="1.5" PointX="21.75" PointY="114.125" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserTypeGiftsRulesTbl" Width="1.5" PointX="24" PointY="104.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserTypeSendRulesTbl" Width="1.5" PointX="24" PointY="107.375" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserTypeWithdrawRulesTbl" Width="1.5" PointX="24" PointY="94.375" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserWithdrawExceptionsTbl" Width="1.5" PointX="8.75" PointY="18.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.UserWithdrawRulesTbl" Width="1.5" PointX="24" PointY="99.625" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.ViewsTbl" Width="1.5" PointX="18.75" PointY="9.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.WeeklyShiftDatesTbl" Width="1.5" PointX="10.75" PointY="194.625" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.WeightsTbl" Width="1.5" PointX="18.75" PointY="12.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.WorkDomainsTbl" Width="1.5" PointX="6.25" PointY="128.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.Audit_Log_TransactionsTbl" Width="1.5" PointX="18.75" PointY="15.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.back_categoriestbl" Width="1.5" PointX="20.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.back_configtbl" Width="1.5" PointX="0.75" PointY="20.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.back_itemcolorstbl" Width="1.5" PointX="20.75" PointY="5.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.back_itemimagestbl" Width="1.5" PointX="20.75" PointY="9.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.back_itemstbl" Width="1.5" PointX="20.75" PointY="12.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.Categories_tempTbl" Width="1.5" PointX="14.75" PointY="20.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.CategoryCountriesTbl" Width="1.5" PointX="3" PointY="111.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.dummyItemImages" Width="1.5" PointX="16.75" PointY="20.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.dummyItems" Width="1.5" PointX="8.75" PointY="21.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.faketypes" Width="1.5" PointX="10.75" PointY="21.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.HacksLogTbl" Width="1.5" PointX="18.75" PointY="21.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.itemprices_back" Width="1.5" PointX="20.75" PointY="21.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.itemsbackup" Width="1.5" PointX="22.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.NewWeightsTbl" Width="1.5" PointX="22.75" PointY="10.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.test2" Width="1.5" PointX="22.75" PointY="13.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.test3" Width="1.5" PointX="22.75" PointY="17.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.Tmp_OrderDetailsTbl" Width="1.5" PointX="22.75" PointY="21.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.TransfersResultTbl" Width="1.5" PointX="2.75" PointY="23.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.xx" Width="1.5" PointX="4.75" PointY="23.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.xx_prices" Width="1.5" PointX="24.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.xxcom" Width="1.5" PointX="24.75" PointY="3.75" />
+        <EntityTypeShape EntityType="MatjarTestDBModel.xxitems" Width="1.5" PointX="24.75" PointY="6.75" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_AttributesListDetailsTbl_AttributesListsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemTypeAttributesTbl_AttributesListsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_BarcodesTbl_ColorsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_BarcodesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_BarcodesTbl_SizesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsTbl_BrandsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_CategoriesTbl_CategoriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_CategoriesTbl_CategoriesTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_CategoryCountriesTbl_CategoriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsTbl_CategoriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OceanMatjarCategoriesTbl_CategoriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OceanMatjarCategoriesTbl_CategoriesTbl1" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_CitiesTbl_GovernoratesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsTbl_CitiesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersTbl_CitiesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemColorsTbl_ColorsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OceanMatjarColorsTbl_ColorsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsCompaniesTbl_CompaniesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersCompaniesTbl_CompaniesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UserCompaniesTbl_CompaniesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersTbl_CompaniesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ConfigTbl_CountriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ConfigTbl_CurrenciesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ConfigTbl_CurrenciesTbl_Calc" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ConfigTbl_CurrenciesTbl_Preview" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ConfigTbl_GrantPointTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ConfigTbl_PriceTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_CategoryCountriesTbl_CountriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_CountryCurrenciesTbl_CountriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_GovernoratesTbl_CountriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemDepartmentImageCountriesTbl_CountriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsCountriesTbl_CountriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsTbl_CountriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersCountriesTbl_CountriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrdersTbl_CountriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersTbl_CountriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_CountryCurrenciesTbl_CurrenciesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemPricesTbl_CountryCurrenciesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersDetailsPricesTbl_CountryCurrenciesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_CouponsTbl_CouponTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersCouponTbl_CouponsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrdersTbl_CurrenciesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_CustomColumnsNamesTbl_CustomTablesNamesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemBookingDaysTbl_Days" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemBookingDaysTbl_DaysTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_LocationDaysTbl_DaysTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersTbl_EducationLevelsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsGovernoratesTbl_GovernoratesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersGovernoratesTbl_GovernoratesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsTbl_GovernoratesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersTbl_GovernoratesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemBookingDaysTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemBookingsTbl_ItemBookingStatusTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemColorsTbl_ItemColorsPricesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemColorsSizesPricesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemColorsSizesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemColorsTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemSeriesTbl_ItemColorsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsSeriesTbl_ItemColorsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsTbl_ItemColorsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemDepartmentImageCountriesTbl_ItemDepartmentImagesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemDepartmentImagesTbl_ItemDepartmentsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsTbl_ItemDepartmentsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_StoryDepartmentsTbl_ItemDepartmentsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemImagesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemLikesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemLikesTbl_UsersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemMatchedItemsTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemMatchedItemsTbl_ItemsTbl1" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemPricesTbl_PriceTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_PriceTypesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemQuantitiesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemRatingsTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemRatingsTbl_UsersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsCompaniesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsCountriesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemSerialsTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemSeriesTbl_ItemSizesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemSeriesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsGovernoratesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemSizesTbl_ItemSizesPricesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemSizesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemSizesTbl_SizesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsSeriesTbl_ItemSizesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsTbl_ItemSizesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsTbl_ItemTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsTbl_PriceTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsTbl_UsersTbl_CreatedBy" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsTbl_UsersTbl_UpdatedBy" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsUsersTypesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemTagsTbl_ItemsTbl1" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemWishlistsTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OceanMatjarItemsTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersDetailRulesTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersDetailsTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_StyleDetailsItemsTbl_ItemsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemsUsersTypesTbl_UsersTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemTagsTbl_TagsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemTypeAttributesTbl_ItemTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_ItemWishlistsTbl_UsersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersTbl_JobsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_LocationDaysTbl_LocationsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_LocationDayTimes_LocationDayTimes" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsTbl_LocationsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersTbl_LocationsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_MainBalanceTbl_MainBalanceTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_MainBalanceTbl_UsersTbl1" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_NotificationsTbl_NotificationsTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_NotificationsTbl_UsersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_NotificationsTypesDetailsTbl_NotificationsTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_NotificationsTypesDetailsTbl_UsersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OceanMatjarPricesTbl_OceanPriceTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OceanMatjarPricesTbl_PriceTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OceanMatjarSizesTbl_SizesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersCompaniesTbl_OffersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersCountriesTbl_OffersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersDetailRulesTbl_OffersDetailsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersDetailsColorsSizesPricesTbl_OffersDetailsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersDetailsPricesTbl_OffersDetailsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersDetailsPricesTbl_PriceTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersDetailsTbl_OffersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersDetailsTbl_UsersTbl_CreatedBy" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersDetailsTbl_UsersTbl_UpdatedBy" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsOffersDetailsTbl_OffersDetailsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersGovernoratesTbl_OffersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersTbl_OfferTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersTbl_UsersTbl_CreatedBy" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersTbl_UsersTbl_UpdatedBy" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersUsersTypesTbl_OffersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsTbl_OffersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OffersUsersTypesTbl_UsersTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsOffersDetailsTbl_OrderDetailsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsSeriesTbl_OrderDetailsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrderDetailsTbl_OrdersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrdersTbl_OrderStatusTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrdersTbl_UsersTbl_DeliveredBy" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrdersTbl_UsersTbl_InitedBy" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrdersTbl_UsersTbl_ShippedBy" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_OrdersTbl_UsersTbl_UserId" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersTbl_PositionsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UnitsTbl_PriceTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_RequestsTbl_TransferMethodsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_RequestsTbl_UsersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_RequestsTbl_UsersTbl1" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_SessionsTbl_UsersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_SizesTbl_SizesGroupsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_StoryDepartmentsTbl_StoriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_StoryDetailsTbl_StoriesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_StyleActionsTbl_StylesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_StyleDetailsImagesTbl_StyleDetailsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_StyleDetailsItemsTbl_StyleDetailsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_StyleDetailsTbl_StylesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_StyleTagsTbl_StylesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_StyleTagsTbl_TagsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_TagsTbl_TagsTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_TransfersTbl_TransferMethodsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_TransfersTbl_TransferStatusTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_TransfersTbl_UsersTbl_Receiver" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_TransfersTbl_UsersTbl_Sender" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UserCompaniesTbl_UsersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UserGiftsRulesTbl_UsersTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersCouponTbl_UsersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UserSendRulesTbl_UsersTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersPermissionsTbl_UsersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersPermissionsTemplatesTbl_UsersTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UsersTbl_WorkDomainsTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_WeeklyShiftDatesTbl_UsersTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UserTypeGiftsRulesTbl_UsersTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UserTypeGiftsRulesTbl_UsersTypesTbl1" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UserTypeSendRulesTbl_UsersTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UserTypeSendRulesTbl_UsersTypesTbl1" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UserTypeWithdrawRulesTbl_UsersTypesTbl" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UserTypeWithdrawRulesTbl_UsersTypesTbl1" />
+        <AssociationConnector Association="MatjarTestDBModel.FK_UserWithdrawRulesTbl_UsersTypesTbl" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

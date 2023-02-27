@@ -1,0 +1,671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A4F8D995-664C-448D-807C-793879B6925F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataServiceLayer</RootNamespace>
+    <AssemblyName>DataServiceLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\AgentVisitsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\AreasTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\AttributesListDetailsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\AttributesListDetailValuesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\AttributesListsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\Audit_Log_Login.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\Audit_Log_TransactionsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\back_categoriestbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\back_configtbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\back_itemcolorstbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\back_itemimagestbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\back_itemstbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\BannersTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\BarcodesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\BranchesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\BrandsDepartmentsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\BrandsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CategoriesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CategoriesTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\Categories_tempTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CategoryCountriesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CitiesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ColorsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CompaniesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ComplaintStatusTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ComplaintsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ComplaintTypeTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ConfigTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CountriesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CountryCurrenciesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CouponsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CouponTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CurrenciesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CustomColumnsNamesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CustomTablesNamesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\DataServiceLayer.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataServiceLayer.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\DataServiceLayer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\DataServiceLayer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataServiceLayer.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\DaysTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\DeliveryPlacesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\DeviceRegistrationIdsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\DevicesLogTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\dummyItemImages.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\dummyItems.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\EducationLevelsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ErrorsLogTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ExcelReportsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\FakeData.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\faketypes.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\GovernoratesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\GrantPointTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\HacksLogTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemBookingDaysTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemBookingDayTimesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemBookingStatusTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemBookingsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemColorsPricesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemColorsSizesPricesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemColorsSizesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemColorsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemDepartmentImageCountriesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemDepartmentImagesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemDepartmentsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemImagesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemLikesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemMatchedItemsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemPricesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\itemprices_back.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemQuantitiesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemRatingsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\itemsbackup.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemsCompaniesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemsCountriesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemSerialsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemSeriesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemsGovernoratesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemSizesPricesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemSizesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemsUsersTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemTagsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemTypeAttributesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemTypeDepartmentsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ItemWishlistsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\JobsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\LocationDaysTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\LocationDayTimesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\LocationsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\MainBalanceTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\MainBalanceTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\MaintenanceStatusTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\MaintenanceTicketsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\NewWeightsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\NotificationsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\NotificationsTbl_Audit.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\NotificationsTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\NotificationsUsersTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OceanCategoryTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OceanMatjarCategoriesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OceanMatjarColorsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OceanMatjarItemsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OceanMatjarPricesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OceanMatjarSizesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OceanPriceTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OceanServersTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OffersCompaniesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OffersCountriesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OffersDetailRulesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OffersDetailsColorsSizesPricesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OffersDetailsPricesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OffersDetailsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OffersGovernoratesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OffersTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OffersUsersTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OfferTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OrderDetailsNotificationsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OrderDetailsOffersDetailsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OrderDetailsSeriesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OrderDetailStatusTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OrderDetailsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OrdersNotificationsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OrderStatusTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OrdersTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\OrderTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\PaymentMethodsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\PaymentTypeTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\PositionsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\PriceTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\QuantitiesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\RequestsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ResourcesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\SessionsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\SizesGroupsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\SizesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\StoriesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\StoryDepartmentsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\StoryDetailsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\StyleActionsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\StyleDetailsImagesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\StyleDetailsItemsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\StyleDetailsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\StylesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\StyleTagsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\sysdiagrams.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\TagsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\TagsTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\test2.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\test3.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\Tmp_OrderDetailsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\tmp__NotificationsTbl_0.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\TransferMethodsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\TransfersResultTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\TransferStatusTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\TransfersTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UnitsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UsageDataTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserColumnsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserColumnsTemplatesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserCompaniesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserExcludedColumnsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserGiftsExceptionsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserGiftsRulesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserProfileColumnsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UsersAddressesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UsersCouponTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserSendExceptionsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserSendRulesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserSessionsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UsersPermissionsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UsersPermissionsTemplatesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UsersTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UsersTypesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserTypeGiftsRulesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserTypeSendRulesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserTypeWithdrawRulesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserWithdrawExceptionsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\UserWithdrawRulesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ViewsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\WeeklyShiftDatesTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\WeightsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\WorkDomainsTbl.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\xx.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\xxcom.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\xxitems.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\xx_prices.cs">
+      <DependentUpon>DataServiceLayer.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="Repository\DataServiceLayer.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DataServiceLayer.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="packages.config" />
+    <None Include="Repository\DataServiceLayer.edmx.diagram">
+      <DependentUpon>DataServiceLayer.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Repository\DataServiceLayer.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataServiceLayer.edmx</DependentUpon>
+      <LastGenOutput>DataServiceLayer.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Repository\DataServiceLayer.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataServiceLayer.edmx</DependentUpon>
+      <LastGenOutput>DataServiceLayer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+IF ($(ConfigurationName)) == (Debug) GOTO END
+:: This is comment 
+
+SET path=\\192.168.2.251\MatjarPlatform\MatjarAPI\bin\
+
+copy /y /d "$(TargetDir)$(ProjectName).dll" "%25path%25\$(ProjectName).dll"
+
+echo "DataServiceLayer Copy Done"
+
+:END</PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0\build\EntityFramework.targets')" />
+</Project>

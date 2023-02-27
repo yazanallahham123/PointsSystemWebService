@@ -1,0 +1,82 @@
+ /* 1***
+       public System.IO.Stream Connect()
+        {
+            string result = "<h1>this is text </h1>" +
+                "<br/><br/><br/><br/><br/><br/>" +
+                "<a href='someLingk' >Some link</a>";
+            byte[] resultBytes = Encoding.UTF8.GetBytes(result);
+            WebOperationContext.Current.OutgoingResponse.ContentType = "text/html";
+            return new MemoryStream(resultBytes);
+        }
+         ****2****
+         [OperationContract]
+        [WebInvoke(Method = "GET",
+      BodyStyle = WebMessageBodyStyle.Bare,
+      UriTemplate = "c")]
+        System.IO.Stream Connect();
+
+        3*******
+        https://weblogs.asp.net/cibrax/enabling-service-availability-in-wcf-services
+
+        4******
+        https://www.google.com.ua/search?rlz=1C1CHBD_enPY771SY771&ei=3FrHWtC1OoK6kwXE3oyYCA&q=Enabling+Service+Availability+in+WCF+Services&oq=Enabling+Service+Availability+in+WCF+Services&gs_l=psy-ab.3..0i71k1l8.546599.546599.0.546824.1.1.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..1.0.0....0.eMWKo0KkRyQ
+
+        5**** new api project call three service projects 
+        6**** loop over all service methods
+        7**** seperate working methods from ones that dont work
+        8******
+          checkstatus();
+
+            checkstatus2();
+            9********
+              public static bool checkstatus()
+        {
+            try
+            {
+                WebClient client = new WebClient();
+
+                var request = (HttpWebRequest)WebRequest.Create("http://localhost:33242/Service1.svc?wsdl");
+                //var request = (HttpWebRequest)WebRequest.Create("https://www.yallaasouq.com:6549");
+
+                var response = (HttpWebResponse)request.GetResponse();
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    // Web service up and running 
+                    return true;
+                }
+                else
+                {
+                    // Web service is down  
+                    return false;
+                }
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+
+        public static void checkstatus2()
+        {
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://www.yallaasouq.com:6549");
+                //HTTP GET
+                var responseTask = client.GetAsync("api-docs");
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                //if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsStringAsync();
+                    readTask.Wait();
+
+                    var resultText = readTask.Result;
+
+                    Console.WriteLine(resultText);
+                    Console.WriteLine("---------------------------\n");
+                }
+            }
+        }
+       */
